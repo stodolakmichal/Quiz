@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="My Awesome Quiz"
+        android:text="QUIZMANIA"
         android:textColor="@android:color/black"
         android:textSize="35sp" />
 
@@ -22,25 +22,33 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/button_start_quiz"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:text="Highscore: 0"
-        android:textSize="35sp" />
-
+        android:layout_marginBottom="32dp"
+        android:text="Najlepszy wynik: 0"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/button_start_quiz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Start Quiz" />
+        android:text="Rozpocznij Quiz" />
+
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_start_quiz"
+        android:layout_alignStart="@+id/button_start_quiz"
+        android:layout_marginStart="-50dp"
+        android:layout_marginTop="15dp" />
 
     <Spinner
         android:id="@+id/spinner_difficulty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_below="@+id/spinner_category"
         android:layout_alignStart="@+id/button_start_quiz"
-        android:layout_below="@+id/button_start_quiz" />
-
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="-24dp" />
 
 </RelativeLayout>
